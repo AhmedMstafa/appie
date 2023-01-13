@@ -83,6 +83,8 @@ body {
   --header-padding: 4.3rem;
   --main-transition: all 0.3s;
   --color-white: #fff;
+  --transtion-med: all 0.5s;
+  --transtion-slow: all 1s;
 }
 
 

@@ -62,7 +62,6 @@ header {
 
 .btn-link:link,
 .btn-link:visited {
-  display: inline-block;
   color: var(--color-white);
   padding: 1rem 2.5rem;
   background-color: var(--main--color);
@@ -117,7 +116,7 @@ header {
 
 .hero-scetion {
   padding-top: var(--section-padding);
-  background-color: #eef1f6;
+  background-color: var(--section-background-color);
   overflow: hidden;
 
 }
@@ -267,4 +266,141 @@ header {
     transform: translateY(-1rem) rotate(15deg);
   }
 
+}
+
+
+/***[ SECTION ]****/
+/*     HOW     */
+/*****[03]*****/
+
+
+
+.how-section {
+  padding: 9.6rem 0;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.how-section {
+  margin-top: 4.8rem;
+}
+
+.btn-view a:link,
+.btn-view a:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 1.5rem 4rem;
+  border-radius: 5rem;
+  color: inherit;
+  transition: all 0.5s;
+  border: 2px solid #eef1f6;
+  cursor: pointer;
+}
+
+.btn-view a:hover,
+.btn-view a:active {
+  background-color: #ff3e66;
+  color: #fff;
+  border-color: #ff3e66;
+}
+
+.features {
+  gap: 2.4rem;
+}
+
+.features-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  gap: 3rem;
+  border: 2px solid #eef1f6;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-icon {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background-color: #2facfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.features-box:nth-child(2) .feature-icon,
+.features-box:nth-child(2)::before {
+  background-color: #ea4d89;
+}
+
+.features-box:nth-child(3) .feature-icon,
+.features-box:nth-child(3)::before {
+  background-color: #3679ff;
+}
+
+.features-box:nth-child(4) .feature-icon,
+.features-box:nth-child(4)::before {
+  background-color: #f67842;
+}
+
+.features-box:nth-child(5) .feature-icon,
+.features-box:nth-child(5)::before {
+  background-color: #6b88f7;
+}
+
+.features-box:nth-child(6) .feature-icon,
+.features-box:nth-child(6)::before {
+  background-color: #3bb094;
+}
+
+
+.feature-icon ion-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.feature-hdtext {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: -2rem;
+}
+
+.feature-ptext {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #6f6f6f;
+}
+
+.feature-link {
+  text-decoration: none;
+  color: #6f6f6f;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/***[ HOVER ]****/
+/*     HOW    */
+/*****[03]*****/
+
+.features-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #2facfc;
+  transition: var(--main-transition);
+}
+
+.features-box:hover::before {
+  width: 100%;
 }

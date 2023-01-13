@@ -98,3 +98,36 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.heading-secondary {
+  margin-bottom: 6.4rem;
+}
+
+.heading-secondary h2 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 4.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.heading-secondary p {
+  font-size: 2rem;
+  color: #6f6f6f;
+}

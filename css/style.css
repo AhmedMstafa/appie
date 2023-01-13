@@ -1,0 +1,102 @@
+/***[ SECTION ]****/
+/*   HEADER  */
+/*****[01]*****/
+
+header {
+  background-color: var(--section-background-color);
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+  gap: 1rem;
+}
+
+.log {
+  flex-basis: 20;
+  height: 2.4rem;
+}
+
+.main-nav {
+  flex-basis: 60%;
+}
+
+.btn-nav {
+  flex-basis: 10%;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.main-nav-list li {
+  display: flex;
+  align-items: center;
+}
+
+.icon-nav {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: var(--main-transition);
+}
+
+.nav-link:link,
+.nav-link:visited,
+.btn-nav-link:link,
+.btn-nav-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--main-font-color);
+  white-space: nowrap;
+  transition: var(--main-transition);
+}
+
+.btn-nav-link:link,
+.btn-nav-link:visited {
+  color: var(--color-white);
+  padding: 1rem 2.5rem;
+  background-color: var(--main--color);
+  border-radius: 5rem;
+  color: var(--color-white);
+}
+
+
+/***[ HOVER ]****/
+/*   HEADER  */
+/*****[01]*****/
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--main--color);
+}
+
+.btn-nav-link:hover,
+.btn-nav-link:active {
+  background-color: #e6385c;
+}
+
+.nav-link:hover .icon-nav {
+  -webkit-animation: updown .3s alternate infinite;
+  animation: updown .3s alternate infinite;
+}
+
+@-webkit-keyframes updown {
+  to {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes updown {
+  to {
+    transform: translateY(2px);
+  }
+}

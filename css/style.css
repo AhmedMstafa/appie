@@ -890,3 +890,198 @@ header {
   text-align: left;
   line-height: 0.8;
 }
+
+/***[ SECTION ]****/
+/*   PRICING   */
+/*****[05]*****/
+
+.pricing-section {
+  margin-top: 9.6rem;
+  margin-bottom: 9.6rem;
+  padding: 0 var(--section-padding);
+}
+
+.pricing-section .heading-secondary {
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+}
+
+.pricing-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+}
+
+.every-box {
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  border: 2px solid var(--section-background-color);
+  border-radius: 10rem;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+
+
+.every-box span {
+  padding: 1rem 2rem;
+  border-radius: 50rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.every-box span:first-child {
+  background-color: var(--main--color);
+  color: var(--color-white);
+}
+
+.every-box span:last-child {
+  color: var(--font-color);
+}
+
+
+.plan-box {
+  padding: 3rem;
+  border: 2px solid var(--section-background-color);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-box:nth-child(3) .plan-box::before {
+  content: "Most popular";
+  position: absolute;
+  right: -1rem;
+  top: 2rem;
+  background-color: #2a6df5;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  padding: .5rem 2rem .5rem 1rem;
+  border-radius: 10rem;
+}
+
+.plan-box span {
+  font-size: 2rem;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.plan-box p:nth-of-type(1) {
+  font-size: 1.8rem;
+  color: var(--font-color);
+}
+
+.plan-box sup {
+  font-size: 2rem;
+  color: initial;
+
+}
+
+.plan-box strong {
+  font-size: 4rem;
+  color: initial;
+}
+
+.plan-box p:nth-of-type(2) {
+  font-size: 1.2rem;
+  color: var(--font-color);
+}
+
+.plan-box hr {
+  height: 1px;
+  background-color: var(--section-background-color);
+  border: none;
+}
+
+
+.box-options li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: initial;
+}
+
+.box-options li span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+.pricing-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: .2rem;
+  border-radius: 50%;
+  color: #2a6df5;
+  background-color: #eef4fe;
+}
+
+.pricing-box:nth-child(3) .pricing-icon {
+  color: #8cddab;
+  background-color: #effaf3;
+}
+
+
+.pricing-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.plan-box a:link,
+.plan-box a:visited {
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  color: inherit;
+  transition: all 0.5s;
+  border: 2px solid var(--section-background-color);
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+
+.pricing-link:hover a:link,
+.pricing-link:hover a:visited {
+  background-color: var(--main--color);
+  color: var(--color-white);
+  border-color: var(--main--color);
+}
+
+.pricing-box:nth-child(3) a:link,
+.pricing-box:nth-child(3) a:visited {
+  border: 2px solid var(--main--color);
+  background-color: var(--main--color);
+  color: var(--color-white);
+}
+
+.pricing-box:nth-child(3) .plan-box {
+  box-shadow: 0px 2.4rem 4.2rem rgba(255, 62, 101, 0.095);
+  border-top: 3px solid var(--main--color);
+  transition: .3s;
+}
+
+.pricing-box:nth-child(3):hover .plan-box {
+  box-shadow: 0px 3.2rem 6.4rem rgba(255, 62, 101, 0.06);
+  transform: translateY(-1.2rem);
+}

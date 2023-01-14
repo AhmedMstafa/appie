@@ -408,68 +408,53 @@ header {
 /***[ SECTION ]****/
 /*    ABOUT     */
 /*****[04]*****/
-
-.about {
+.about-section {
   margin-bottom: 9.6rem;
 }
 
-.about-col {
+.about {
   background-color: var(--section-background-color);
-  /* margin-bottom: 9.6rem; */
-  display: grid;
   height: 45rem;
-  grid-template-columns: 1fr 1fr;
   overflow: hidden;
 }
 
-.cut-img {
-  position: relative;
+.text-box {
+  grid-template-rows: 2;
+  height: 45rem;
 }
 
-.about-col img {
-  min-width: 50%;
-  position: absolute;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-  /* padding: 0 3rem; */
+.text-head {
+  grid-column: 1 / -1;
+  align-self: center;
 }
 
 
-.text-box-top h3 {
+.text-head span {
   color: var(--main--color);
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.text-box-top h4 {
+.text-head h3 {
   padding: 1rem 0;
   font-size: 4.4rem;
   font-weight: 900;
   line-height: 1.1;
 }
 
-
-.text-box-top p {
+.text-head p {
   font-size: 1.8rem;
   color: var(--font-color);
   max-width: 45rem;
   line-height: 1.5;
 }
 
-.text-box-bottom {
-  display: flex;
-}
-
-.about-last {
+.check-text {
   display: flex;
   gap: 1rem;
 }
 
-.about-last span ion-icon {
+.about-icon {
   width: 2rem;
   height: 2rem;
   padding: .3rem;
@@ -478,14 +463,15 @@ header {
   color: var(--color-white);
 }
 
-.about-last h5 {
+.text-group h5 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.about-last p {
-  font-size: 1.8rem;
+.text-group p {
+  font-size: 1.5rem;
   max-width: 23rem;
   line-height: 1.5;
   color: var(--font-color);
+  max-width: 20rem;
 }

@@ -821,7 +821,7 @@ header {
 
 .download-text h3 {
   font-size: 4.4rem;
-  font-weight: 700;
+  font-weight: 900;
 
 }
 
@@ -899,10 +899,6 @@ header {
   margin-top: 9.6rem;
   margin-bottom: 9.6rem;
   padding: 0 var(--section-padding);
-}
-
-.pricing-section .heading-secondary {
-  text-align: center;
 }
 
 .pricing-grid {

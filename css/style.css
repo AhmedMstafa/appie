@@ -1081,3 +1081,88 @@ header {
   box-shadow: 0px 3.2rem 6.4rem rgba(255, 62, 101, 0.06);
   transform: translateY(-1.2rem);
 }
+
+
+/***[ SECTION ]****/
+/*  TESTIMOIAL  */
+/*****[05]*****/
+
+.testimonial {
+  background-image: url("../img/testimonial-bg-2.jpg");
+  background-size: contain;
+  padding: 9.6rem;
+  grid-template-columns: auto 1fr;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-test {
+  border-radius: 50%;
+}
+
+.starts-box {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.star {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ffb848;
+}
+
+.review-title {
+  text-align: center;
+  margin-top: 1rem;
+  color: #b6cdfb;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.testimonial-right {
+  max-width: 66.5rem;
+
+}
+
+.text-testimonial {
+  color: #fdfdff;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.info-next {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.person-name {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.person-jop {
+  font-size: 1.5rem;
+  color: #b6cdfb;
+  font-weight: 500;
+}
+
+.testimonial-icons {}
+
+.testimonial-icons .icon-left,
+.testimonial-icons .icon-right {
+  color: var(--color-white);
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 1.3rem;
+  border-radius: 50%;
+  border: 1px solid #b6cdfb;
+  margin-left: 1rem;
+  cursor: pointer;
+}

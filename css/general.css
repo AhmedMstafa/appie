@@ -64,6 +64,7 @@ Medium: 12px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -71,6 +72,8 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #0B0F26;
+  overflow-x: hidden;
+
 }
 
 :root {
@@ -83,7 +86,7 @@ body {
   --header-padding: 4.3rem;
   --main-transition: all 0.3s;
   --color-white: #fff;
-  --transtion-med: all 0.5s;
+  --transtion-med: all 0.5s ease-in;
   --transtion-slow: all 1s;
 }
 

@@ -1415,12 +1415,15 @@ header {
   justify-content: center;
   opacity: 0.3;
   transition: var(--main-transition);
+
 }
 
 .up-arr-icon {
   width: 1.8rem;
   height: 1.8rem;
   color: var(--color-white);
+  -webkit-animation: updown .3s alternate infinite;
+  animation: updown .3s alternate infinite;
 }
 
 /***[ HOVER ]****/
@@ -1432,8 +1435,8 @@ header {
 }
 
 .up-arr:hover .up-arr-icon {
-  -webkit-animation: updown .3s alternate infinite;
-  animation: updown .3s alternate infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 

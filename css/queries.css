@@ -395,6 +395,11 @@ element.style {
     max-width: 100%;
   }
 
+  .about .text-head h3 {
+    font-size: 3.6rem;
+    padding: 1.2rem 0;
+  }
+
 
   .pricing-grid {
     grid-template-columns: 1fr;
@@ -436,9 +441,7 @@ element.style {
     gap: 3.6rem;
   }
 
-  .make {
-    font-size: 1.6rem;
-  }
+
 
   .wherever-img-box img {
     width: 70%;
@@ -468,21 +471,37 @@ element.style {
     max-width: 100%;
   }
 
+  .footer .container {
+    row-gap: 4rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .dwnand,
+  .dwnos {
+    border-width: 1px;
+  }
 
 }
 
-@media (max-width: 25em) {
+
+@media (max-width: 23.75em) {
+
+  .about .text-head h3 {
+    font-size: 3rem;
+    padding: 1.2rem 0;
+  }
+
+  .about .jolly {
+    font-size: 1.6rem;
+    padding: 0;
+  }
 
   .dwnos,
   .dwnand {
     margin-right: 0.5rem;
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    border-width: 1px;
-  }
-
-  .dwnand {
-    margin-right: 0;
   }
 
 

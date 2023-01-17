@@ -266,18 +266,17 @@ header {
   margin: 0;
 }
 
-.feadback-text {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
+.feadback-text {}
 
 .feedback-text p {
   color: var(--font-color);
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .feedback-text strong {
   display: block;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 2rem;
   color: var(--main-font-color);
 }
@@ -1266,6 +1265,7 @@ header {
 .footer {
   background-color: var(--section-background-color);
   padding: 9.6rem 0 4.3rem;
+  position: relative;
 }
 
 
@@ -1402,9 +1402,39 @@ header {
 }
 
 
+.up-arr {
+  position: absolute;
+  right: 3.6rem;
+  bottom: 3.6rem;
+  background-color: var(--main--color);
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+  transition: var(--main-transition);
+}
+
+.up-arr-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: var(--color-white);
+}
+
 /***[ HOVER ]****/
 /*   FOOTER    */
 /*****[07]*****/
+
+.up-arr:hover {
+  opacity: 0.8;
+}
+
+.up-arr:hover .up-arr-icon {
+  -webkit-animation: updown .3s alternate infinite;
+  animation: updown .3s alternate infinite;
+}
 
 
 .footer-link:hover,

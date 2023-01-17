@@ -68,6 +68,31 @@ allLinks.forEach(function (link) {
   });
 });
 
+///////////////////////////////////////////////////////
+const sectionHeroEL = document.querySelector(".hero-scetion")
+
+const obs = new IntersectionObserver(function (entries) {
+  const ent = entries[0];
+  console.log(ent);
+  if (ent.isIntersecting == false) {
+    document.body.classList.add("sticky");
+    document.body.classList.add("height");
+  }
+  if (ent.isIntersecting == true) {
+    document.body.classList.remove("sticky");
+  }
+},
+  {
+    // in the view port
+    root: null,
+    threshold: 0,
+    rootMargin: "-96px",
+  });
+obs.observe(sectionHeroEL);
+
+
+
+
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

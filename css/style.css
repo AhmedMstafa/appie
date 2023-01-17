@@ -528,7 +528,7 @@ header {
 
 /***[ SECTION ]****/
 /*    Whereve   */
-/*****[04]*****/
+/*****[05]*****/
 
 
 
@@ -610,7 +610,7 @@ header {
 
 /***[ SECTION ]****/
 /*    Active   */
-/*****[05]*****/
+/*****[06]*****/
 
 .active-section {
   padding-bottom: var(--section-padding);
@@ -784,7 +784,7 @@ header {
 
 /***[ HOVER ]****/
 /*    Active   */
-/*****[05]*****/
+/*****[06]*****/
 
 
 .get-started:hover a:link,
@@ -842,7 +842,7 @@ header {
 
 /***[ SECTION ]****/
 /*   DOWNLOAD   */
-/*****[05]*****/
+/*****[07]*****/
 
 .download-section {
   background-color: var(--section-background-color);
@@ -942,7 +942,7 @@ header {
 
 /***[ SECTION ]****/
 /*   PRICING   */
-/*****[05]*****/
+/*****[08]*****/
 
 .pricing-section {
   padding: var(--section-padding) 0;
@@ -1106,7 +1106,7 @@ header {
 
 /***[ HOVER ]****/
 /*   PRICING   */
-/*****[05]*****/
+/*****[08]*****/
 
 .pricing-link:hover a:link,
 .pricing-link:hover a:visited {
@@ -1140,7 +1140,7 @@ header {
 
 /***[ SECTION ]****/
 /*  TESTIMOIAL  */
-/*****[06]*****/
+/*****[09]*****/
 
 .testimonial {
   background-image: url("../img/testimonial-bg-2.jpg");
@@ -1228,7 +1228,7 @@ header {
 
 /***[ HOVER ]****/
 /*  TESTIMOIAL  */
-/*****[06]*****/
+/*****[09]*****/
 .icon-left:hover,
 .icon-right:hover {
   color: #b6cdfb;
@@ -1236,7 +1236,7 @@ header {
 
 /***[ SECTION ]****/
 /*  SPONSERS  */
-/*****[07]*****/
+/*****[10]*****/
 
 .sponsers-section {
   padding: var(--section-padding);
@@ -1270,7 +1270,7 @@ header {
 
 /***[ HOVER ]****/
 /*   SPONSERS */
-/*****[07]*****/
+/*****[10]*****/
 
 
 .sp-img-box:hover {
@@ -1280,7 +1280,7 @@ header {
 
 /***[ SECTION ]****/
 /*    FOOTER    */
-/*****[08]*****/
+/*****[11]*****/
 
 
 .footer {
@@ -1449,7 +1449,7 @@ header {
 
 /***[ HOVER ]****/
 /*   FOOTER    */
-/*****[07]*****/
+/*****[11]*****/
 
 .up-arr:hover {
   opacity: 0.8;

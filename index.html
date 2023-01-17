@@ -26,6 +26,9 @@
   <!-- Js File -->
   <script defer src="js/script.js"></script>
 
+  <!-- polyfill -->
+  <script defer src=" https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
   <title>appie</title>
 </head>
 <!-- Start Header -->
@@ -37,7 +40,7 @@
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="nav-link" href="#home"><span>Home </span><ion-icon class="icon-nav"
+        <li><a class="nav-link" href="#"><span>Home </span><ion-icon class="icon-nav"
               name="chevron-down-outline"></ion-icon></a></li>
         <li><a class="nav-link" href="#service">Service </a></li>
         <li><a class="nav-link" href="#pages"><span>Pages </span><ion-icon class="icon-nav"
@@ -529,9 +532,9 @@
       <button class="dwnand"><ion-icon class="icon-dwnand" name="logo-google-playstore"></ion-icon><span>Download for
           Android</span></button>
     </div>
-    <p class="copy">Copyright &copy; 2021 Apple.All Rights reserved.</p>
+    <p class="copy">Copyright &copy; <span class="year">2021</span> Apple.All Rights reserved.</p>
   </div>
-  <a class="up-arr" href="#home">
+  <a class="up-arr" href="#">
     <ion-icon class="up-arr-icon" name="arrow-up-sharp"></ion-icon>
   </a>
 </footer>

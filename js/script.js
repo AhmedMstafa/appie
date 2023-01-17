@@ -1,3 +1,5 @@
+// console.log("hello world")
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
@@ -17,6 +19,55 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+// set current year
+const yearEL = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEL.textContent = currentYear;
+
+// make mobile navigation work
+// nav-open
+
+const btnNavEL = document.querySelector(".btn-mobile-nav");
+const headrEL = document.querySelector(".header");
+
+btnNavEL.addEventListener("click", function () {
+  headrEL.classList.toggle("nav-open");
+
+})
+
+// smooth scrolling animation
+
+const allLinks = document.querySelectorAll("a");
+console.log(allLinks);
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    // console.log(href);
+
+    //scroll top
+
+    if (href === "#") window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      // console.log(sectionEl);
+      sectionEl.scrollIntoView({ behavior: "smooth" })
+    }
+
+    // close mobile navigtion
+    if (link.classList.contains("nav-link"))
+      headrEL.classList.toggle("nav-open");
+
+  });
+});
+
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

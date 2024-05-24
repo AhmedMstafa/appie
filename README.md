@@ -1,5 +1,5 @@
 # appie
->The first assignment in Kalboyan ElMarsous
+>Simple Project using html and css
 
 [appie](https://appie-ahmed.netlify.app/ "Go live")
 
